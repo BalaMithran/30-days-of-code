@@ -1,0 +1,26 @@
+n=int(input())
+dict={}
+for i in range(n):
+    st=input()
+    st = st.split(" ")
+    name=st[0]
+    num = st[1]
+    dict[name] = num
+
+reqarr=list()
+try:
+    while (True):
+        t=input()
+        if (t != None):
+            reqarr.append(t)
+        else:
+            break
+except EOFError:
+    pass
+
+for i in reqarr:
+    if i in dict:
+        print(i + "="  + str(dict[i]))
+    else:
+        print("Not found")
+
