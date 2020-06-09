@@ -1,0 +1,31 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+l=list()
+for i in range(0,n):
+    st=input()
+    l.append(st)
+for i in l:
+    co=0
+    ev=""
+    od=""
+    for j in i:
+        
+
+        if (co%2)==0:
+            ev+=j
+        else:
+            od+=j 
+        co+=1
+    print(ev,od)
+
+
+def rotLeft(a, d):
+    while d>0:
+        t=a.pop(0)
+        a.append(t)
+        d-=1
+    return a
+
+
+
+    
